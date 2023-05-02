@@ -1,0 +1,70 @@
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #1F2039;
+}
+section {
+  padding: 30px;
+}
+h1 {
+    font-size: 3rem;
+    color: #a5b4fc;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+.name-email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.name-email div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+label {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+input, textarea {
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+}
+input[type="submit"] {
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
+.cta {
+  font-size: 1.1em;
+  color: white;
+  background: linear-gradient(#8E86B5, #ACAEED);
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+.cta:hover {
+  text-decoration: none;
+  background: linear-gradient(#696484, #8788BA);
+}
+@media screen and (max-width: 750px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .name-email {
+    flex-direction: column;
+    gap: 0;
+  }
+}

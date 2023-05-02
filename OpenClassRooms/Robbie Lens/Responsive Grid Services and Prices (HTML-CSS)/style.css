@@ -1,0 +1,55 @@
+html {
+  font-size: 16px;
+}
+body {
+    background-color: #1F2039;
+  }
+  section {
+    padding: 50px ;
+  }
+  h1, h2 {
+    color: #A5B4FC;
+  }
+  h1 {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+  p {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 30px;
+  }
+  .tarifs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 2px;
+  }
+  .tarifs div {
+    border-right: solid #A5B4FC 2px;
+    border-bottom: solid #A5B4FC 2px;
+    padding: 30px;
+    height: 300px;
+    width: 240px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+@media screen and (max-width: 840px) {
+  section {
+    padding: 0;
+  }
+  .tarifs div {
+    width: 90%;
+    padding: 2px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tarifs div {
+    padding: 0;
+    width: 70%;
+  }
+}
